@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Workin' on it
+          Workin&apos; on it
         </p>
       </main>
 
