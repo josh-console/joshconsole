@@ -1,0 +1,5 @@
+package.json
+package-lock.json
+src/graphql/generated-gql.ts
+.next/
+node_modules/
