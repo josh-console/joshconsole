@@ -1,0 +1,17 @@
+import { PostLayout } from "@components/post";
+
+### Testing
+
+_This_ all is a **test**
+
+<div>Does this work in a div?</div>
+
+```javascript
+console.log("testing");
+```
+
+export default ({ children }) => (
+    <PostLayout date="01/01/2001" title="Just a Little Test">
+        {children}
+    </PostLayout>
+);
