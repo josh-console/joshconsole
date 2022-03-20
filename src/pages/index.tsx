@@ -4,20 +4,16 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Josh Console</title>
                 <meta name="description" content="Josh Console" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
             <main className={styles.main}>
                 <h1 className={styles.title}>Josh Console</h1>
-
                 <p className={styles.description}>Workin&apos; on it</p>
             </main>
-
-            <footer className={styles.footer}>© 2022 Josh Console</footer>
         </div>
     );
 };

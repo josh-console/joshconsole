@@ -1,0 +1,12 @@
+.footer {
+    padding: 16px;
+    background: #292929;
+}
+
+.footer .divider {
+    font-size: 20px;
+    margin: 0 14px;
+}
+.footer .divider:before {
+    content: "/";
+}

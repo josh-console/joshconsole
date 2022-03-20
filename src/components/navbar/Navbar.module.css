@@ -1,0 +1,14 @@
+.navbar {
+    padding: 16px;
+    background: #292929;
+}
+.navbar a {
+    font-size: 24px;
+}
+.navbar .divider {
+    font-size: 24px;
+    margin: 0 16px;
+}
+.navbar .divider:before {
+    content: "/";
+}

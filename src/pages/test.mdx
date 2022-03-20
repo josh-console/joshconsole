@@ -15,3 +15,9 @@ export default ({ children }) => (
         {children}
     </PostLayout>
 );
+
+export const getStaticProps = () => ({
+    props: {
+        section: "blog",
+    },
+});

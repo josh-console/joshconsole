@@ -1,10 +1,13 @@
+import { Footer } from "@components/footer";
+import { Container } from "@components/layout";
+import { Navbar } from "@components/navbar";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <>
+        <Container>
             <Script
                 src="https://www.googletagmanager.com/gtag/js?id=G-5NL9XQCSN2"
                 strategy="afterInteractive"
@@ -18,8 +21,10 @@ function MyApp({ Component, pageProps }: AppProps) {
                     gtag('config', 'G-5NL9XQCSN2');
                 `}
             </Script>
+            <Navbar section={pageProps.section} />
             <Component {...pageProps} />
-        </>
+            <Footer />
+        </Container>
     );
 }
 
