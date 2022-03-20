@@ -1,5 +1,3 @@
-import { PostLayout } from "@components/post";
-
 A seemingly common complaint regarding NestJS and TypeScript is the absence of interfaces in runtime code (since interfaces are removed during transpilation). This limitation prevents the use of constructor-based dependency injection and instead necessitates use of the `@Inject` decorator. That decorator requires us to associate some "real" JavaScript token with the interface to resolve the dependency - often just a string of the interface name:
 
 ```typescript
@@ -98,15 +96,3 @@ export class Client {
 ```
 
 Now a single, "real" JavaScript reference is used throughout the application to resolve the dependency. Whether or not the minor inconvenience of token-based dependency injection justifies this usage of abstract classes is a separate question. If you're feeling lazy, though, this is a convenient option!
-
-export default ({ children }) => (
-    <PostLayout date="01/01/2001" title="Just a Little Test">
-        {children}
-    </PostLayout>
-);
-
-export const getStaticProps = () => ({
-    props: {
-        section: "blog",
-    },
-});
