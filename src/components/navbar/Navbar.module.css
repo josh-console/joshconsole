@@ -1,6 +1,35 @@
 .navbar {
-    padding: 16px;
-    background: #292929;
+    --main-height: 100px;
+    height: calc(var(--main-height) - 20px);
+    padding: 20px;
+    background-image: linear-gradient(
+        to bottom,
+        #8f8ff7,
+        #8f8ff7 var(--main-height),
+        transparent var(--main-height),
+        transparent calc(var(--main-height) + 2px),
+        #8f8ff7 calc(var(--main-height) + 2px),
+        #8f8ff7 calc(var(--main-height) + 6px)
+    );
+    /* background-image: linear-gradient(
+        to right,
+        #8f8ff7,
+        #8f8ff7 var(--main),
+        transparent var(--main),
+        transparent calc(var(--main) + 10px),
+        #8f8ff7 calc(var(--main) + 10px),
+        #8f8ff7 calc(var(--main) + 10px),
+        transparent 250px,
+        transparent 270px,
+        #8f8ff7 270px,
+        #8f8ff7 290px,
+        transparent 290px /* transparent 100% */
+    /* );  */
+    /* background-color: #292929;
+    background-image: radial-gradient(#8f8ff7 50%, transparent 50%),
+        radial-gradient(#8f8ff7 50%, transparent 50%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px; */
 }
 .navbar a {
     font-size: 24px;

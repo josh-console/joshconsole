@@ -10,8 +10,8 @@ export const Navbar: React.FC<NavbarProps> = ({ children, section }) => {
         <nav className={styles.navbar}>
             <Link href="/">
                 <a>
-                    <span className="teal">josh</span>
-                    <span className="periwinkle">console</span>
+                    <span style={{ fontWeight: 300 }}>josh</span>
+                    <b>console</b>
                 </a>
             </Link>
             {section && (
